@@ -1,0 +1,9 @@
+<center>
+<b>Update Proposal Title</b>
+<br>
+<br>
+<%= form_with url: update_proposal_path, method: :get do |form| %>
+  <%= form.text_field :title,  value: @proposal.title, class: 'w-50 form-control' %>
+  <%= form.submit 'Submit', class: 'btn btn-primary'  %>
+<% end %>
+</center>
