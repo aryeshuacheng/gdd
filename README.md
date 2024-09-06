@@ -69,6 +69,8 @@ On Mac, we will use Homebrew (https://brew.sh/) as a package manager. With Homeb
 * brew install rbenv *
 
 # Setting up the Repo
+Requirement: I assume you already have Git in your environment, if not, you can install it following the instructions @ https://git-scm.com/downloads
+
 1. Clone the repo into a directory of your choice
 * git clone git@github.com:aryeshuacheng/gdd.git *
 2. In your cloned directory, run:
