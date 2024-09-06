@@ -1,6 +1,6 @@
 # About #
 
-The GDD AI project essentially is a layer which interacts with OpenAI via API calls. 
+The GDD AI project essentially is a layer which interacts with OpenAI via API calls. Where our project improves upon the conventional ChatGPT use case is that we are creating Assistants (essentially a private GPT that you can customize and tune) and using fewshot learning to train it with the knowledge that we want it to have. Essentially, we aim to have our own OpenAI Assistant become a trustworthy expert on the seven worthwhile goals of global development.
 
 # Nuts and Bolts (Requirements)
 
