@@ -16,7 +16,7 @@ In our current alpha build of the project, the Ruby on Rails web application ask
 
 # The Future #
 
-My present vision for our web application is to effectively establish a unified portal that can be utilized by different organizations. Each organization will only be able to see proposals from within their organization. Furthermore, I would propose a WSYIWYG editor to that proposals can be "tuned" under human discretion. Templates is another valuable feature that allows end users to specify how they want OpenAI responses formatted visually.
+My present vision for our web application is to effectively establish a unified portal that can be utilized by different organizations. Each organization will only be able to see proposals from within their organization. Furthermore, I would propose a WSYIWYG editor so that proposals can be "tuned" under human discretion. Templates is another valuable feature that allows end users to specify how they want OpenAI responses formatted visually.
 
 # The Rails Justification #
 
