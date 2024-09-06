@@ -43,10 +43,9 @@ https://github.com/aryeshuacheng/gdd/blob/master/config/database.yml
 From database.yml:
 
 development:
-  <<: *default
-  database: gdd-ai-staging
-  username: postgres
-  password: postgres
+database: gdd-ai-staging
+username: postgres
+password: postgres
 
 This means that in a development environnment (your local machine), Rails will attempt to connect to a database named "gdd-ai-staging" with the credentials as specified in username and password. You can use a generic password in the previous step, i.e. you can just use the username, "postgres", and the password, "postgres".
 
