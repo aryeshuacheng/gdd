@@ -65,10 +65,13 @@ On Mac, we will use Homebrew (https://brew.sh/) as a package manager. With Homeb
 
 1. Install Homebrew
 * /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" *
-2. Install a Ruby package manager (I use rbenv, but a package manager such as asdf supports other languages)
-* brew install rbenv *
-3. Install the version of Ruby that we need using rbenv
-* rbenv install 3.1.2* 
+2. Install a Ruby package manager (I prefer asdf as it supports multiple languages)
+* See https://asdf-vm.com/guide/getting-started.html *
+
+# Windows/Mac Continuing Installation
+1. Install the version of Ruby that we use for this project using asdf
+* asdf install ruby 3.2.2 *
+  
 # Setting up the Repo
 Requirement: I assume you already have Git in your environment, if not, you can install it following the instructions @ https://git-scm.com/downloads
 
