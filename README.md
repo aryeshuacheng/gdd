@@ -67,7 +67,8 @@ On Mac, we will use Homebrew (https://brew.sh/) as a package manager. With Homeb
 * /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" *
 2. Install a Ruby package manager (I use rbenv, but a package manager such as asdf supports other languages)
 * brew install rbenv *
-
+3. Install the version of Ruby that we need using rbenv
+* rbenv install 3.1.2* 
 # Setting up the Repo
 Requirement: I assume you already have Git in your environment, if not, you can install it following the instructions @ https://git-scm.com/downloads
 
@@ -84,3 +85,7 @@ This will create the database in your local environment.
 * rails s -p 3000
 6. You can visit the site by pointing your browser to
 * localhost:3000
+
+* Don't Panic*
+
+Setting up your development environment will often run into snags no matter how well prepared we are. Feel free to contact me if you need help.
