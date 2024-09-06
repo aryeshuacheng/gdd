@@ -18,11 +18,11 @@ In our current alpha build of the project, the Ruby on Rails web application ask
 
 My present vision for our web application is to effectively establish a unified portal that can be utilized by different organizations. Each organization will only be able to see proposals from within their organization. Furthermore, I would propose a WSYIWYG editor to that proposals can be "tuned" under human discretion. Templates is another valuable feature that allows end users to specify how they want OpenAI responses formatted visually.
 
-# Developer Setup Instructions #
+# The Rails Justification #
 
-My first choice for implementing this project is in a web framework called, Ruby on Rails. It allows for rapid development and integrates a database as part of the framework. The developer setup is similar for Windows and Mac users. 
+My first choice for implementing this project is in a web framework called, Ruby on Rails. It allows for easy, rapid development, and integrates a database as part of the framework. The developer setup is similar for Windows and Mac users. The Ruby community is well known for utilizing gems (essentially plugins) which opens up a wide range of features and functionality. For instance, we use the gem, HTTParty to make API calls (i.e. GET or POST requests). As another benefit of the Rails framework, it can be integrated with various front end frameworks such as Vue or React.
 
-# Database #
+# Database Setup#
 
 You will need to install the database software, we use postgres for our project. See instructions @
 
@@ -67,9 +67,12 @@ On Mac, we will use Homebrew (https://brew.sh/) as a package manager. With Homeb
 * git clone git@github.com:aryeshuacheng/gdd.git *
 2. In your cloned directory, run:
 * rake db:create*
-This will create a database in your local environment.
-
-3. 
-# Building The Application #
-
-1. Clone the repo in a directory of your choice (i.e. git clone git@github.com:aryeshuacheng/gdd.git)
+This will create the database in your local environment.
+3. Run bundle, which installs all the gems and dependencies
+*bundle install
+4. Run migrations (migrations are essentially instructions to Ruby to transform databases to make changes such as creating new tables or creating new columns)
+* rake db:migrate
+5. If all goes well, you can start your Rails app with the following command which will start Rails on port 3000
+* rails s -p 3000
+6. You can visit the site by pointing your browser to
+* localhost:3000
