@@ -53,6 +53,12 @@ This means that in a development environnment (your local machine), Rails will a
 
 Please follow the directions @ https://learn.microsoft.com/en-us/windows/wsl/install to install WSL2, which is essentially a way to run a Linux environment on Windows 11. Please use the Ubuntu 20.4.6 LTS build. Now that you have WSL2 installed, you can open a Linux terminal (or command prompt) and then follow the rest of the directions.
 
+A solid tutorial for the rest of the setup on WSL2 can be found at: 
+
+https://codex.org/2022/08/19/setting-up-ruby-wsl2.html
+
+The process is relatively straight forward, you will install a package manager, use the package manager to install a Ruby version manager, and finally use that Ruby version manager (rbenv, asdf, etc.) to install the right version of Ruby (in our case, ruby-3.2.2).
+
 # Mac Setup #
 
 On Mac, we will use Homebrew (https://brew.sh/) as a package manager. With Homebrew we will install Ruby and a Ruby version manager. 
