@@ -1,24 +1,16 @@
-# README
+# About #
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The GDD AI project essentially is a layer which interacts with OpenAI via API calls. 
 
-Things you may want to cover:
+# Nuts and Bolts (Requirements)
 
-* Ruby version
+The project relies on having an OpenAI account. OpenAI charges money per request depending on its complexity. In the near future, we would need to have API key from OpenAI. 
 
-* System dependencies
+Visit: https://platform.openai.com/api-keys
 
-* Configuration
+# VALUE #
 
-* Database creation
+By streamlining the process of getting responses from OpenAI, we can help end users make more efficient use of their time. In theory, our application will be much convenient and powerful than using OpenAI through a ChatGPT prompt. For example, by implementing templates, an end user could generate a proposal or policy in the context of a business email.
 
-* Database initialization
+In our current alpha build of the project, the Ruby on Rails web application asks for an input (i.e. some kind of question to be answered like "Is it ethical to raise the drinking age restriction?") and it will then take that input and make an API call to OpenAI.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
