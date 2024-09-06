@@ -22,6 +22,34 @@ My present vision for our web application is to effectively establish a unified 
 
 My first choice for implementing this project is in a web framework called, Ruby on Rails. It allows for rapid development and integrates a database as part of the framework. The developer setup is similar for Windows and Mac users. 
 
+# Database #
+
+You will need to install the database software, we use postgres for our project. See instructions @
+
+https://www.postgresql.org/download/
+
+Either you will use Homebrew to install it on Mac or apt on a WSL2 environment.
+
+After you install the database, you will need to start the Postgres service on your machine. Then, you will need to "bash" into your Postgres console to create a user on your database and grant it the appropriate permissions.
+
+1. sudo -u postgres psql
+
+2. postgres=# create user postgres with encrypted password 'postgres';
+3. postgres=# grant all privileges on database gdd-ai-staging to postgres;
+
+In Rails, the database is configured in a database.yml file, please see: 
+https://github.com/aryeshuacheng/gdd/blob/master/config/database.yml
+
+From database.yml:
+
+development:
+  <<: *default
+  database: gdd-ai-staging
+  username: postgres
+  password: postgres
+
+This means that in a development environnment (your local machine), Rails will attempt to connect to a database named "gdd-ai-staging" with the credentials as specified in username and password. You can use a generic password in the previous step, i.e. you can just use the username, "postgres", and the password, "postgres".
+
 # Windows Setup #
 
 Please follow the directions @ https://learn.microsoft.com/en-us/windows/wsl/install to install WSL2, which is essentially a way to run a Linux environment on Windows 11. Please use the Ubuntu 20.4.6 LTS build. Now that you have WSL2 installed, you can open a Linux terminal (or command prompt) and then follow the rest of the directions.
@@ -32,8 +60,17 @@ On Mac, we will use Homebrew (https://brew.sh/) as a package manager. With Homeb
 
 1. Install Homebrew
 * /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" *
-3. 
+2. Install a Ruby package manager (I use rbenv, but a package manager such as asdf supports other languages)
+* brew install rbenv *
 
+# Setting up the Repo
+1. Clone the repo into a directory of your choice
+* git clone git@github.com:aryeshuacheng/gdd.git *
+2. In your cloned directory, run:
+* rake db:create*
+This will create a database in your local environment.
+
+3. 
 # Building The Application #
 
 1. Clone the repo in a directory of your choice (i.e. git clone git@github.com:aryeshuacheng/gdd.git)
