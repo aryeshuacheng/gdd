@@ -8,7 +8,7 @@ The project relies on having an OpenAI account. OpenAI charges money per request
 
 Visit: https://platform.openai.com/api-keys
 
-# VALUE #
+# Value #
 
 By streamlining the process of getting responses from OpenAI, we can help end users make more efficient use of their time. In theory, our application will be much convenient and powerful than using OpenAI through a ChatGPT prompt. For example, by implementing templates, an end user could generate a proposal or policy in the context of a business email.
 
