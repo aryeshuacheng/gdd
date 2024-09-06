@@ -49,6 +49,10 @@ From database.yml:
 
 This means that in a development environnment (your local machine), Rails will attempt to connect to a database named "gdd-ai-staging" with the credentials as specified in username and password. You can use a generic password in the previous step, i.e. you can just use the username, "postgres", and the password, "postgres".
 
+4. Run the postgres server
+* on WSL2: sudo service postgresql start *
+* on Mac: brew services start postgresql
+  
 # Windows Setup #
 
 Please follow the directions @ https://learn.microsoft.com/en-us/windows/wsl/install to install WSL2, which is essentially a way to run a Linux environment on Windows 11. Please use the Ubuntu 20.4.6 LTS build. Now that you have WSL2 installed, you can open a Linux terminal (or command prompt) and then follow the rest of the directions.
