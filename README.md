@@ -93,6 +93,6 @@ This will create the database in your local environment.
 6. You can visit the site by pointing your browser to
 * localhost:3000
 
-* Don't Panic*
+# Don't Panic #
 
 Setting up your development environment will often run into snags no matter how well prepared we are. Feel free to contact me if you need help.
