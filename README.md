@@ -74,7 +74,7 @@ Requirement: I assume you already have Git in your environment, if not, you can 
 1. Clone the repo into a directory of your choice
 * git clone git@github.com:aryeshuacheng/gdd.git *
 2. In your cloned directory, run:
-* rake db:create*
+* rake db:create *
 This will create the database in your local environment.
 3. Run bundle, which installs all the gems and dependencies
 *bundle install
