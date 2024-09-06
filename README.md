@@ -18,3 +18,22 @@ In our current alpha build of the project, the Ruby on Rails web application ask
 
 My present vision for our web application is to effectively establish a unified portal that can be utilized by different organizations. Each organization will only be able to see proposals from within their organization. Furthermore, I would propose a WSYIWYG editor to that proposals can be "tuned" under human discretion. Templates is another valuable feature that allows end users to specify how they want OpenAI responses formatted visually.
 
+# Developer Setup Instructions #
+
+My first choice for implementing this project is in a web framework called, Ruby on Rails. It allows for rapid development and integrates a database as part of the framework. The developer setup is similar for Windows and Mac users. 
+
+# Windows Setup #
+
+Please follow the directions @ https://learn.microsoft.com/en-us/windows/wsl/install to install WSL2, which is essentially a way to run a Linux environment on Windows 11. Please use the Ubuntu 20.4.6 LTS build. Now that you have WSL2 installed, you can open a Linux terminal (or command prompt) and then follow the rest of the directions.
+
+# Mac Setup #
+
+On Mac, we will use Homebrew (https://brew.sh/) as a package manager. With Homebrew we will install Ruby and a Ruby version manager. 
+
+1. Install Homebrew
+* /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" *
+3. 
+
+# Building The Application #
+
+1. Clone the repo in a directory of your choice (i.e. git clone git@github.com:aryeshuacheng/gdd.git)
