@@ -83,6 +83,8 @@ On Mac, we will use Homebrew (https://brew.sh/) as a package manager. With Homeb
 # Windows/Mac Continuing Installation
 1. Install the version of Ruby that we use for this project using asdf
 * asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+* sudo apt-get update
+* sudo apt-get install build-essential
 * asdf install ruby 3.2.2
   
 # Setting up the Repo
