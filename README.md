@@ -26,6 +26,10 @@ My present vision for our web application is to effectively establish a unified 
 
 My first choice for implementing this project is in a web framework called, Ruby on Rails. It allows for easy, rapid development, and integrates a database as part of the framework. The developer setup is similar for Windows and Mac users. The Ruby community is well known for utilizing gems (essentially plugins) which opens up a wide range of features and functionality. For instance, we use the gem, HTTParty to make API calls (i.e. GET or POST requests). As another benefit of the Rails framework, it can be integrated with various front end frameworks such as Vue or React.
 
+# Terminal / Command Lane #
+
+If you see a command mentioned, you are executing them within a MacOS terminal or Windows WSL2 command prompt.
+
 # Database Setup #
 
 You will need to install the database software, we use postgres for our project. See instructions @
