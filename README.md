@@ -89,6 +89,7 @@ On Mac, we will use Homebrew (https://brew.sh/) as a package manager. With Homeb
 * asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
 * sudo apt-get update
 * sudo apt-get install build-essential
+* sudo apt install zlib1g libssl-dev zlib1g-dev
 * asdf install ruby 3.2.2
 * asdf shell ruby 3.2.2
   
