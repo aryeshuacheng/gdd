@@ -79,6 +79,9 @@ On Mac, we will use Homebrew (https://brew.sh/) as a package manager. With Homeb
 * /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" *
 2. Install a Ruby package manager (I prefer asdf as it supports multiple languages)
 * See https://asdf-vm.com/guide/getting-started.html *
+3. Add asdf to your ~/.bashrc file
+* nano ~/.bashrc
+* Append the following to the end of the file in the editor: . "$HOME/.asdf/asdf.sh"
 
 # Windows/Mac Continuing Installation
 1. Install the version of Ruby that we use for this project using asdf
