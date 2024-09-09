@@ -90,6 +90,7 @@ On Mac, we will use Homebrew (https://brew.sh/) as a package manager. With Homeb
 * sudo apt-get update
 * sudo apt-get install build-essential
 * asdf install ruby 3.2.2
+* asdf shell ruby 3.2.2
   
 # Setting up the Repo
 Requirement: I assume you already have Git in your environment, if not, you can install it following the instructions @ https://git-scm.com/downloads
