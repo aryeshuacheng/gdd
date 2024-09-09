@@ -82,6 +82,7 @@ On Mac, we will use Homebrew (https://brew.sh/) as a package manager. With Homeb
 3. Add asdf to your ~/.bashrc file
 * nano ~/.bashrc
 * Append the following to the end of the file in the editor: . "$HOME/.asdf/asdf.sh"
+* Press Control+x to exit, and save the file when prompted
 
 # Windows/Mac Continuing Installation
 1. Install the version of Ruby that we use for this project using asdf
