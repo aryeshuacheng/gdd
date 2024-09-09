@@ -40,6 +40,7 @@ Either you will use Homebrew to install it on Mac or apt on a WSL2 environment.
 
 * sudo apt install postgresql
 * sudo apt install libpq-dev
+* sudo apt-get install nodejs
   
 After you install the database, you will need to start the Postgres service on your machine. Then, you will need to "bash" into your Postgres console to create a user on your database and grant it the appropriate permissions.
 
