@@ -101,7 +101,7 @@ Requirement: I assume you already have Git in your environment, if not, you can 
 * rake db:create 
 This will create the database in your local environment.
 3. Run bundle, which installs all the gems and dependencies
-*bundle install
+* bundle install
 4. Run migrations (migrations are essentially instructions to Ruby to transform databases to make changes such as creating new tables or creating new columns)
 * rake db:migrate
 5. If all goes well, you can start your Rails app with the following command which will start Rails on port 3000
