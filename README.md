@@ -114,18 +114,18 @@ This will create the database in your local environment.
 6. You can visit the site by pointing your browser to
 * localhost:3000
 
-# AWS #
+# AWS 
 
 In AWS, we created a MySQL2 instance in RDS. We created a new inbound rule for the security group to allow outside access and configured it to be publicly accessible. Access to a database is configured in config/database.yml. The configuration inside that file is as follows:
 
 development:
-  adapter: mysql2
-  encoding: utf8
-  database: gdd-dev
-  username: [redacted]
-  password: [redacted]
-  host: gdd-dev.cdn4s55ckdkd.us-east-1.rds.amazonaws.com
-  port: 3306
+adapter: mysql2
+encoding: utf8
+database: gdd-dev
+username: [redacted]
+password: [redacted]
+host: gdd-dev.cdn4s55ckdkd.us-east-1.rds.amazonaws.com
+port: 3306
 
 In the future, we may want to tighten up the security to only allow connections from certain ranges of IP addresses.
 
