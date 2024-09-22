@@ -55,6 +55,7 @@ class OpenaiService
 
     while HTTParty.get(get_run_endpoint, headers: options[:headers], timeout: 500)['status'] == "in_progress"
       puts "Create Run API Call Status: #{HTTParty.get(get_run_endpoint, headers: options[:headers], timeout: 500)['status']}"
+      sleep(5)
     end
 
     #4. Get Messages
