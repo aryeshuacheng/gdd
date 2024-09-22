@@ -53,6 +53,8 @@ class OpenaiService
     puts "Thread ID: #{thread_id}"
     puts "Run ID: #{run_id}"
 
+    sleep(3)
+
     while HTTParty.get(get_run_endpoint, headers: options[:headers], timeout: 500)['status'] == "in_progress"
       puts "Create Run API Call Status: #{HTTParty.get(get_run_endpoint, headers: options[:headers], timeout: 500)['status']}"
       sleep(5)
