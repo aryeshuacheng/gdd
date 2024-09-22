@@ -82,10 +82,8 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  adapter: postgresql
-  encoding: utf8
-  database: <%= ENV['RDS_DB_NAME'] %>
-  username: <%= ENV['RDS_USERNAME'] %>
-  password: <%= ENV['RDS_PASSWORD'] %>
-  host: <%= ENV['RDS_HOSTNAME'] %>
-  port: 5432
+  <<: *default
+  host: gdd-dev.cdn4s55ckdkd.us-east-1.rds.amazonaws.com
+  database: gdd-dev
+  username: postgres
+  password: GDDFIRE2024!
