@@ -10,12 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_07_21_003649) do
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
-  create_table "proposals", force: :cascade do |t|
-    t.string "html"
+ActiveRecord::Schema[7.2].define(version: 2024_09_22_164022) do
+  create_table "proposals", charset: "utf8mb3", force: :cascade do |t|
+    t.text "html", size: :long
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

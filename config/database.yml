@@ -13,8 +13,8 @@
 # gem "pg"
 #
 default: &default
-  adapter: postgresql
-  encoding: unicode
+  adapter: mysql2
+  encoding: utf8
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -22,9 +22,10 @@ default: &default
 
 development:
   <<: *default
-  database: gdd-ai-staging
+  host: gdd-dev.cdn4s55ckdkd.us-east-1.rds.amazonaws.com
+  database: gdd-dev
   username: postgres
-  password: postgres
+  password: GDDFIRE2024!
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
