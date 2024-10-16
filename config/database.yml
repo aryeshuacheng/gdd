@@ -22,10 +22,10 @@ default: &default
 
 development:
   <<: *default
-  host: gdd-dev.cdn4s55ckdkd.us-east-1.rds.amazonaws.com
+  host: ls-5cf1fe88aa36cc35b884f824ad52768395bb363d.c7seckas0vdl.us-east-1.rds.amazonaws.com
   database: gdd-dev
-  username: postgres
-  password: GDDFIRE2024!
+  username: dbmasteruser
+  password: YR>e43uJFoWBno.*D+Ji)o7`vQQ8<C|n
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
