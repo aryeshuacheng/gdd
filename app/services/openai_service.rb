@@ -55,13 +55,13 @@ class OpenaiService
 
     sleep(3)
 
-    while HTTParty.get(get_run_endpoint, headers: options[:headers], timeout: 500)['status'] != "completed" || HTTParty.get(get_run_endpoint, headers: options[:headers], timeout: 500)['status'] != "failed"
+    while HTTParty.get(get_run_endpoint, headers: options[:headers], timeout: 500)["status"] != "completed" || HTTParty.get(get_run_endpoint, headers: options[:headers], timeout: 500)["status"] == "in_progress"
       puts "Create Run API Call Status: #{HTTParty.get(get_run_endpoint, headers: options[:headers], timeout: 500)['status']}"
       sleep(5)
     end
-
+    puts "Create Run API Call Status: #{HTTParty.get(get_run_endpoint, headers: options[:headers], timeout: 500)['status']}"
     #4. Get Messages
-    get_messages_endpoint = "https://api.openai.com/v1/threads/#{thread_id}/messages"
+   get_messages_endpoint = "https://api.openai.com/v1/threads/#{thread_id}/messages"
 
     get_messages_response = HTTParty.get(get_messages_endpoint, headers: options[:headers], timeout: 500)
     responses = []
