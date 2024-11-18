@@ -37,7 +37,7 @@ gem "bootsnap", require: false
 # Custom Gems
 gem 'openai'
 gem 'httparty'
-gem 'pry', '~> 0.14.2'
+gem 'pry', '~> 0.15.0'
 
 # Bootstrap Gems
 gem "bootstrap"
